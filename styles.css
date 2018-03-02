@@ -1,0 +1,146 @@
+body {
+ 
+ background: white;/* i made the index page have a white background*/
+}
+/* made sure header and paragraphs are centered and given family font  */
+h1{ 
+		font-family: Georgia;
+		text-align:center;
+		}
+ p{
+ 		text-align:center;
+		}
+ h3{
+ 		text-align:center;
+		}
+	
+/* this is for the mobile resizing of the map so it fitted well being responsive for phones*/
+@media only screen and (max-width:500px) {                  
+  /* For mobile phones: */
+  .maps {
+    width:100%;
+  }
+}
+/* this checks to see it the website is responsive when becoming smaller, if width
+of page is smaller than 500px then background baby blue*/
+@media only screen and (max-width:500px){
+	body{
+		background-color: lightblue;
+	}
+}
+
+@media screen and (max-width: 600px){/* navigation resizing*/
+    ul.topnav li.right, 
+    ul.topnav li {
+    	float: none;
+	}
+}
+	
+/* On smaller screens, decrease text size for slide show text names making the 
+font size 11px*/
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* sizing of google maps*/		
+div.maps{
+	 height: 500px;
+	 width: 500%;
+}
+
+/* used a container so text can be aligned, plus changing the background
+of the container to grey so text can be visible*/
+div.container{
+	padding: 80px 150px;
+	background: #2d2d30;
+    color: #bdbdbd;
+}
+
+
+/* this is the navigation bar, given a dark grey colour. it overflow is hidden so theres
+no overlaps of boxes or text, each text is displayed on a block white white text
+whilst it navigation bar also has hover features*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	}
+
+ul.topnav li {
+	float: left;
+	}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	}
+
+ul.topnav li a:hover:not(.active) {
+	background-color: #111;
+	}
+
+ul.topnav li a.active {
+	background-color: #4CAF50;
+	}
+
+
+
+/* this is for the slideshow on the index page, the position relative 
+so it remains stationary and giving the container a fixed width to prevent overlaps.
+made sure all images are the same sizes with height and width and giving the 
+text name and namers appropriate font sizes, colours etc*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  
+}
+.mySlides1 img{
+	width:500px;
+	height:350px;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+	
+	
+	
+
+ 
+

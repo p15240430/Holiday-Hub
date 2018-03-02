@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Holiday Hub Booking System</title> <!-- This is the domain name of my page which is seen on the tab-->
+	<link rel="stylesheet" href="styles.css"> <!-- This links my index page to my styles.css file-->
+	<!-- Get Google web fonts: -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+
+<body>
+<!--This is the navigation bar in which i've used appropriate list tags
+for my navigation bar. also made sure that all the links are linked to the root directory-->
+<ul class="topnav">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="Picture.html">Pictures</a></li>
+  <li><a href="video.html">Videos </a></li>
+</ul>
+
+<!--This is the title of index page -->
+<h1>Welcome to Holiday Hub Booking System</h1>
+
+
+<!--i've added a div tag called container to align my header, paragraphs and button within the css-->
+<div class="container">
+<h3>Holiday Hub</h3>
+<p>Welcome to Holiday Hub, a website designed to bring the holiday over to you within a few clicks.
+   Holiday Hub shows you vacation locations and different hotels you could come across, we also would be providing
+   you would comforting hotel rooms of your chose that comes at a reasonable value. Why not go ahead and book now, take a break.</p>
+   <br />
+<button id="myBtn">Click me</button>
+</div>
+<!-- i have added an google Api here which helps display google maps. i have linked my java script code to scripts.js so my function can 
+be called from the script.js file-->
+<div id="map" class="maps"></div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzq9ffbBPAyjjr5SIY4jfKAmyBjpTXaJs&callback=initMap"></script>
+<script src="scripts.js"></script>
+</body>
+
+</html>
